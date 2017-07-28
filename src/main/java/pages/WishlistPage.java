@@ -44,12 +44,29 @@ public class WishlistPage {
         for(WebElement row : rows){
             if(row.getText().contains(item)){
                 WebElement rowDelete = row.findElement(By.className("icon-remove"));
+
                 wait.until(ExpectedConditions.elementToBeClickable(rowDelete));
                 rowDelete.click();
                 acceptPopup();
                 wait.until(ExpectedConditions.not(ExpectedConditions.textToBePresentInElement(wishlistTable, item)));
             }
         }
+    }
+
+    private int getColumnNumber(List<WebElement> columns, String columnName) {
+        int columnNumber = 0;
+        for (int i = 0; i < columns.size(); i++){
+            if (columns.get(i).getText().contains(columnName)) {
+                columnNumber = i;
+                break;
+            }
+        }
+        return columnNumber;
+    }
+
+    private List<WebElement> getColumns(WebElement table) {
+        List<WebElement> columns = table.findElements(By.tagName("td"));
+        return columns;
     }
 
     private List<WebElement> getRows(WebElement table){

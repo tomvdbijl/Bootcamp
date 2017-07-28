@@ -1,5 +1,6 @@
 package chapterSix;
 
+import General.SetUpTearDown;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
@@ -7,16 +8,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class SignOutTest {
+public class SignOutTest extends SetUpTearDown {
 
     @Test
     public void logOutSuccesFull() {
-        ChromeDriverManager.getInstance().setup();
-        WebDriver driver = new ChromeDriver();
+        // Onderstaande wordt aangeroepen in de TestShopScenario
+        // door de @BeforeMethod
+//        ChromeDriverManager.getInstance().setup();
+//        WebDriver driver = new ChromeDriver();
         String schermTitel = null;
 
-        driver.get("https://techblog.polteq.com/testshop/index.php");
-        driver.manage().window().maximize();
+//        driver.get("https://techblog.polteq.com/testshop/index.php");
+//        driver.manage().window().maximize();
 
         driver.findElement(By.className("login")).click();
         schermTitel = driver.findElement(By.className("page-heading")).getText();
@@ -42,7 +45,8 @@ public class SignOutTest {
                 .as("Het scherm Authentication verschijnt niet!")
                 .isEqualTo("AUTHENTICATION");
 
-
-        driver.quit();
+        // Wordt aangeroepen in de TestShopScenario
+        // in de @AfterMethod
+//        driver.quit();
     }
 }

@@ -20,6 +20,9 @@ public class ContactUsPage {
     @FindBy(css = "#email")
     private WebElement emailadressTextField;
 
+    @FindBy(css = "p.form-group.form-error")
+    private WebElement emailValidationCheck;
+
     @FindBy(id = "id_order")
     private WebElement orderReferenceTextField;
 
@@ -32,8 +35,14 @@ public class ContactUsPage {
     @FindBy(css = "p.alert.alert-success")
     private WebElement successMessageField;
 
-    @FindBy(css = "p.alert.alert-danger")
+    @FindBy(css = ".alert.alert-danger>ol>li")
     private WebElement errorMessageField;
+
+    @FindBy(css = "div.form-group.form-error")
+    private WebElement elementErrorCheck;
+
+    @FindBy (css = "page-heading bottom-indent")
+    private WebElement screenName;
 
     public ContactUsPage(WebDriver driver){
         this.driver = driver;
@@ -59,6 +68,18 @@ public class ContactUsPage {
         return successMessageField.getText();
     }
 
+    public boolean checkScreenNameFound(String screenName){
+        return screenName.contains(screenName);
+    }
+
+    public boolean checkErrorMessage(String errorMessage){
+        return errorMessageField.getText().equals(errorMessage);
+    }
+
+    public boolean emailValidationCheck(){
+        return emailValidationCheck.isDisplayed();
+    }
+
     public void fillSubjectHeading(String subjectHeading){
         Select subjectHeading2 = new Select(driver.findElement(By.cssSelector("select#id_contact")));
         subjectHeading2.selectByVisibleText(subjectHeading);
@@ -79,6 +100,5 @@ public class ContactUsPage {
     public void clickSubmit(){
         submitButton.click();
     }
-
 }
 

@@ -41,7 +41,7 @@ public class DeleteWishListTest extends SetUpTearDown{
         boolean itemFound = wishlistPage.foundTextInTable(wishListItem);
 
         Assertions.assertThat(itemFound)
-                .as("'Feel the pain' hoort niet voor te komen in de wishlist!")
+                .as("'" + wishListItem + "' hoort niet voor te komen in de wishlist!")
                 .isFalse();
 
         rollBack(wishListItem);
@@ -56,7 +56,7 @@ public class DeleteWishListTest extends SetUpTearDown{
         wishlistPage.refresPage();
 
         Assertions.assertThat(wishlistPage.foundTextInTable(item))
-                .as("'Feel the pain' komt niet voor in de wishlist!")
+                .as("'" + item + "' komt niet voor in de wishlist!")
                 .isTrue();
     }
 }

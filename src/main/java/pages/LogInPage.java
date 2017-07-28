@@ -18,6 +18,18 @@ public class LogInPage {
     @FindBy(id = "SubmitLogin")
     private WebElement submitLoginButton;
 
+    @FindBy(css = "p.alert.alert-success")
+    private WebElement successMessageField;
+
+    @FindBy(css = ".alert.alert-danger>ol>li")
+    private WebElement errorMessageField;
+
+    @FindBy(css = "input#email.is_required.validate.account_input.form-control")
+    private WebElement emailValidationCheck;
+
+    @FindBy(css = "input#password.is_required.validate.account_input.form-control")
+    private WebElement passwordValidationCheck;
+
     public LogInPage(WebDriver driver){
         this.driver = driver;
 
@@ -34,6 +46,22 @@ public class LogInPage {
 
     public void clickSubmit(){
         submitLoginButton.click();
+    }
+
+    public String checkSuccessMessage(){
+        return successMessageField.getText();
+    }
+
+    public boolean checkErrorMessage(String errorMessage){
+        return errorMessageField.getText().equals(errorMessage);
+    }
+
+    public boolean emailValidationCheck(){
+        return emailValidationCheck.isDisplayed();
+    }
+
+    public boolean passwordValidationCheck(){
+        return passwordValidationCheck.isDisplayed();
     }
 
 }
