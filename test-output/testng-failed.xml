@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="bootcamp_maven(failed)">
     <classes>
-      <class name="examples.FirstSeleniumTest">
+      <class name="chapterNine.NOK_LogInTest">
         <methods>
-          <include name="logInSuccesFull"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="NOK_LogInWrongPassword"/>
         </methods>
-      </class> <!-- examples.FirstSeleniumTest -->
+      </class> <!-- chapterNine.NOK_LogInTest -->
     </classes>
   </test> <!-- bootcamp_maven(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
