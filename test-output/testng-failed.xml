@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="bootcamp_maven(failed)">
     <classes>
-      <class name="chapterNine.NOK_LogInTest">
+      <class name="API.GetExample">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="NOK_LogInWrongPassword"/>
+          <include name="testUrlParam"/>
         </methods>
-      </class> <!-- chapterNine.NOK_LogInTest -->
+      </class> <!-- API.GetExample -->
     </classes>
   </test> <!-- bootcamp_maven(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
