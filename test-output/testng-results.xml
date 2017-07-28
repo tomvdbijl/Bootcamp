@@ -1,73 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="45693" started-at="2017-07-27T16:27:45Z" finished-at="2017-07-27T16:28:31Z">
+  <suite name="Default Suite" duration-ms="2555" started-at="2017-07-28T09:31:46Z" finished-at="2017-07-28T09:31:48Z">
     <groups>
     </groups>
-    <test name="bootcamp_maven" duration-ms="45693" started-at="2017-07-27T16:27:45Z" finished-at="2017-07-27T16:28:31Z">
-      <class name="chapterNine.NOK_LogInTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="setUp" is-config="true" duration-ms="8200" started-at="2017-07-27T18:27:45Z" finished-at="2017-07-27T18:27:54Z">
+    <test name="bootcamp_maven" duration-ms="2555" started-at="2017-07-28T09:31:46Z" finished-at="2017-07-28T09:31:48Z">
+      <class name="API.GetExample">
+        <test-method status="PASS" signature="testUrlParam2()[pri:0, instance:API.GetExample@34ce8af7]" name="testUrlParam2" duration-ms="2518" started-at="2017-07-28T11:31:46Z" finished-at="2017-07-28T11:31:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NOK_LogInEmptyEmailAddress()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="NOK_LogInEmptyEmailAddress" duration-ms="1612" started-at="2017-07-27T18:27:54Z" finished-at="2017-07-27T18:27:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NOK_LogInEmptyEmailAddress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="tearDown" is-config="true" duration-ms="913" started-at="2017-07-27T18:27:55Z" finished-at="2017-07-27T18:27:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="setUp" is-config="true" duration-ms="6089" started-at="2017-07-27T18:27:56Z" finished-at="2017-07-27T18:28:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NOK_LogInEmptyFields()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="NOK_LogInEmptyFields" duration-ms="1336" started-at="2017-07-27T18:28:02Z" finished-at="2017-07-27T18:28:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NOK_LogInEmptyFields -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="tearDown" is-config="true" duration-ms="806" started-at="2017-07-27T18:28:03Z" finished-at="2017-07-27T18:28:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="setUp" is-config="true" duration-ms="6871" started-at="2017-07-27T18:28:04Z" finished-at="2017-07-27T18:28:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NOK_LogInEmptyPassword()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="NOK_LogInEmptyPassword" duration-ms="1425" started-at="2017-07-27T18:28:11Z" finished-at="2017-07-27T18:28:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NOK_LogInEmptyPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="tearDown" is-config="true" duration-ms="913" started-at="2017-07-27T18:28:13Z" finished-at="2017-07-27T18:28:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="setUp" is-config="true" duration-ms="5257" started-at="2017-07-27T18:28:13Z" finished-at="2017-07-27T18:28:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NOK_LogInWrongEmailAddress()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="NOK_LogInWrongEmailAddress" duration-ms="2224" started-at="2017-07-27T18:28:19Z" finished-at="2017-07-27T18:28:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NOK_LogInWrongEmailAddress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="tearDown" is-config="true" duration-ms="862" started-at="2017-07-27T18:28:21Z" finished-at="2017-07-27T18:28:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="setUp" is-config="true" duration-ms="6712" started-at="2017-07-27T18:28:22Z" finished-at="2017-07-27T18:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NOK_LogInWrongPassword()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="NOK_LogInWrongPassword" duration-ms="1511" started-at="2017-07-27T18:28:29Z" finished-at="2017-07-27T18:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NOK_LogInWrongPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:chapterNine.NOK_LogInTest@49e4cb85]" name="tearDown" is-config="true" duration-ms="937" started-at="2017-07-27T18:28:30Z" finished-at="2017-07-27T18:28:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- chapterNine.NOK_LogInTest -->
+        </test-method> <!-- testUrlParam2 -->
+      </class> <!-- API.GetExample -->
     </test> <!-- bootcamp_maven -->
   </suite> <!-- Default Suite -->
 </testng-results>
